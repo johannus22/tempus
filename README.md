@@ -10,3 +10,10 @@ Tempus - Latin word which means time.
 
 - [@johannus22](https://www.github.com/johannus22)
 
+
+## Tech Stack
+
+**Client:** Livewire, Vite, TailwindCSS
+
+**Server:** Laravel
+

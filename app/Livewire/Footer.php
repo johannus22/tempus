@@ -4,10 +4,10 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class NavBar extends Component
+class Footer extends Component
 {
     public function render()
     {
-        return view('livewire.components.nav-bar');
+        return view('livewire.footer');
     }
 }

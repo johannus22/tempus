@@ -9,8 +9,9 @@
     @vite(['resources/css/app.css','resources/js/app.js'])
 
 </head>
-<body class="bg-slate-100 flex justify-center items-center min-h-screen">
-    <livewire:nav-bar />
-    <h1 class="font-bold text-black text-4xl">Tempus Initialized</h1>
+<body class="bg-slate-200">
+    <livewire:layouts.nav-bar />
+
+    <h1 class="font-bold text-black text-4xl flex justify-center items-center min-h-screen">Tempus Initialized</h1>
 </body>
 </html>

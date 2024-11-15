@@ -5,15 +5,15 @@ A schedule viewer for my parish to view mass schedules so that the ministers are
 
 Tempus - Latin word which means time.
 
+## Tech
+
+![Livewire](https://img.shields.io/badge/livewire-%234e56a6.svg?style=flat&logo=livewire&logoColor=white) ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=flat&logo=laravel&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=plastic&logo=vite&logoColor=white)
+
 
 ## Authors
 
 - [@johannus22](https://www.github.com/johannus22)
 
 
-## Tech Stack
-
-**Client:** Livewire, Vite, TailwindCSS
-
-**Server:** Laravel
 

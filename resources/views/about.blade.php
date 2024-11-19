@@ -16,7 +16,9 @@
     <section id='hero' class="pt-16 mx-20 md:mx-30">
         <livewire:components.about.hero />
     </section>
-
+    {{-- <footer class="bg-gray-50 dark:bg-gray-900">
+        <livewire:components.footer.footer-main>
+    </footer> --}}
 
 
 </body>

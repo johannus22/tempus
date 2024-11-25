@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.fc-toolbar-title {
+    @apply font-bold text-xl text-gray-800;
+}
+
+/* Apply smaller text on mobile */
+@media (max-width: 640px) {
+    .fc-toolbar-title {
+        @apply text-sm;
+    }
+}
+
+.fc-col-header-cell {
+    @apply text-gray-600 font-bold text-sm uppercase bg-gray-100 py-2 p-5;
+}
+
+.fc-day-sun {
+    @apply text-red-600;
+}
+
+.fc-event {
+    @apply bg-blue-500 text-white px-1 py-1 rounded-md shadow text-sm; /* Padding for better readability */
+}
+
+.fc-event .fc-event-title {
+    white-space: normal; /* Allow text to wrap */
+}

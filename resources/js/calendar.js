@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function initializeCalendar() {
     var calendarEl = document.getElementById('calendar');
-    // Check if calendar element exists on the current page
     if (calendarEl) {
         var calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
@@ -23,19 +22,19 @@ function initializeCalendar() {
             events: [
                 {
                     title: 'NMass',
-                    start: '2024-11-03T08:00:00',
+                    start: '2024-11-03T08:30:00',
                 },
                 {
                     title: 'HB Mayapyap',
-                    start: '2024-11-03T12:00:00',
+                    start: '2024-11-03T12:30:00',
                 },
                 {
-                    title: 'HB Buenavista East dasdasdasdasdasddfghdfgdfg dfg ddfgdfgdf',
-                    start: '2024-11-03T12:00:00',
+                    title: 'HB Buenavista East',
+                    start: '2024-11-03T15:00:00',
                 },
                 {
                     title: 'HB Mayapyap',
-                    start: '2024-11-03T12:00:00',
+                    start: '2024-11-03T16:00:00',
                 },
             ],
             themeSystem: 'standard', // Optional: To override FullCalendar's default theme
@@ -47,6 +46,11 @@ function initializeCalendar() {
             dayCellClassNames: 'border border-gray-200 h-20 text-center',
             editable: true,
             selectable: true,
+            eventTimeFormat: {
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: true, // This ensures 12-hour format (e.g., 3:00 pm)
+            },
 
         });
 

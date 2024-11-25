@@ -24,7 +24,8 @@
 <body class="bg-slate-200">
     <livewire:layouts.nav-bar />
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-10 fc-toolbar-title font-bold text-lg text-gray-800 sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-10
+    fc-toolbar-title font-bold text-lg text-gray-800 sm:text-sm">
         <div class="mt-8">
             <div id="calendar"></div>
         </div>

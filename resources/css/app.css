@@ -2,11 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Calendar styles, the most pain in the ass */
+@media (max-width: 767px) {
+    .fc-dayGridMonth-view .fc-day {
+        min-width: 4rem;
+        height: 4rem;
+    }
+
+    .fc-dayGridMonth-view {
+        display: block;
+        max-height: 70vh;
+        overflow-y: auto;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    .fc-dayGridMonth-view .fc-row {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .fc-event {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .fc-event-time {
+        display: block;
+        font-size: 0.625rem;
+        white-space: nowrap;
+        overflow: visible;
+        text-overflow: unset;
+        width: auto;
+    }
+
+    .fc-event-title {
+        display: none;
+    }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+    .fc-event-title {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    .fc-event {
+        padding: 5px 10px;
+        text-align: left;
+        width: auto;
+        max-width: none;
+    }
+}
+
 .fc-toolbar-title {
     @apply font-bold text-xl text-gray-800;
 }
 
-/* Apply smaller text on mobile */
 @media (max-width: 640px) {
     .fc-toolbar-title {
         @apply text-sm;
@@ -19,12 +83,4 @@
 
 .fc-day-sun {
     @apply text-red-600;
-}
-
-.fc-event {
-    @apply bg-blue-500 text-white px-1 py-1 rounded-md shadow text-sm; /* Padding for better readability */
-}
-
-.fc-event .fc-event-title {
-    white-space: normal; /* Allow text to wrap */
 }

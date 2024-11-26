@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    {{-- script getting the json --}}
+    {{-- script getting the json and pass to calendar.js--}}
     <script>
         var calendarEvents = @json($event);
     </script>

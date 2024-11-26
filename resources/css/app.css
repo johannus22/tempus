@@ -78,9 +78,16 @@
 }
 
 .fc-col-header-cell {
-    @apply text-gray-600 font-bold text-sm uppercase bg-gray-100 py-2 p-5;
+    @apply text-gray-700 font-bold text-sm uppercase bg-gray-100 py-2 p-5;
 }
 
 .fc-day-sun {
     @apply text-red-600;
+}
+.fc-event-dot {
+    display: none !important;
+}
+
+.fc-event {
+    border: none !important;
 }

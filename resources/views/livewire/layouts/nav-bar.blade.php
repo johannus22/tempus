@@ -21,7 +21,7 @@
 
                         <livewire:components.nav.nav-menu
                         :menuItemName="'Calendar'"
-                        :menuItemLink="'calendar'"/>
+                        :menuItemLink="'calendar.index'"/>
 
                         <livewire:components.nav.nav-menu
                         :menuItemName="'About'"

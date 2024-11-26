@@ -30,5 +30,10 @@
             <div id="calendar"></div>
         </div>
     </div>
+
+    {{-- script getting the json --}}
+    <script>
+        var calendarEvents = @json($event);
+    </script>
 </body>
 </html>

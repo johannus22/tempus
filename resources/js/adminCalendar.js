@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initializeCalendar() {
-    var calendarEl = document.getElementById('calendar');
-    if (calendarEl) {
-        var calendar = new FullCalendar.Calendar(calendarEl, {
+    var calendarAd = document.getElementById('adminCalendar');
+    if (calendarAd) {
+        var calendar = new FullCalendar.Calendar(calendarAd, {
             initialView: 'dayGridMonth',
             headerToolbar: {
                 left: 'title',
@@ -44,8 +44,8 @@ function initializeCalendar() {
                     'text-center'
                 ];
             },
-            editable: false,
-            selectable: false,
+            editable: true,
+            selectable: true,
             eventTimeFormat: {
                 hour: '2-digit',
                 minute: '2-digit',

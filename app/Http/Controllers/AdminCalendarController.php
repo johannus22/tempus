@@ -11,6 +11,7 @@ class AdminCalendarController extends Controller
         $events = Event::all();
         foreach($events as $event){
             $calendarEvent[] = [
+                'id' => $event->id,
                 'title' => $event->event_name,
                 'start' => $event->event_time
             ];

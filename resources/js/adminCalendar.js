@@ -51,7 +51,6 @@ function initializeCalendar() {
                 minute: '2-digit',
                 hour12: true,
             },
-
         });
         calendar.render();
     }

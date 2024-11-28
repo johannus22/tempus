@@ -51,6 +51,20 @@ function initializeCalendar() {
                 minute: '2-digit',
                 hour12: true,
             },
+            eventClick: function (info) {
+                const eventData = {
+                    title: info.event.title,
+                    start: info.event.start.toISOString(),
+                    end: info.event.end ? info.event.end.toISOString() : null,
+                };
+
+                // Emit Livewire event
+                Livewire.emit('openModal', eventData);
+
+
+                // Dispatch a custom event for Alpine.js (if necessary)
+                window.dispatchEvent(new CustomEvent('open-modal', { detail: eventData }));
+            }
 
         });
         calendar.render();

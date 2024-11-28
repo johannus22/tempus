@@ -1,4 +1,4 @@
-<div>
+<div class="pt-1">
 
     <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
         <span class="sr-only">Open user menu</span>

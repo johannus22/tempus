@@ -33,7 +33,5 @@
     <script>
         var calendarEvents = @json($event);
     </script>
-    @livewireScripts
-    @stack('scripts')
 </body>
 </html>

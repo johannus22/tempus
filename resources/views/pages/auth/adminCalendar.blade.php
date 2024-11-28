@@ -26,9 +26,6 @@
         </div>
     </div>
 
-    <!-- Livewire Modal -->
-    <livewire:components.modals.view />
-
     <!-- Pass the events to the calendar.js -->
     <script>
         var calendarEvents = @json($event);

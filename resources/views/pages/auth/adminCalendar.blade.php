@@ -26,6 +26,10 @@
         </div>
     </div>
 
+    {{-- modal --}}
+    <x-edit-event>
+    </x-edit-event>
+
     <!-- Pass the events to the calendar.js -->
     <script>
         var calendarEvents = @json($event);

@@ -51,6 +51,24 @@ function initializeCalendar() {
                 minute: '2-digit',
                 hour12: true,
             },
+            eventClick: function(info) {
+                const formattedStart = info.event.start.toLocaleString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: true
+                });
+                window.dispatchEvent(new CustomEvent('open-modal', {
+                    detail: {
+                        id: info.event.id,
+                        title: info.event.title,
+                        start: formattedStart,
+                        end: info.event.end,
+                    }
+                }));
+            },
         });
         calendar.render();
     }

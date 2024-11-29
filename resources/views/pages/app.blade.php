@@ -12,6 +12,9 @@
 <body class="bg-slate-200">
     <livewire:layouts.nav-bar />
 
-    <h1 class="font-bold text-black text-4xl flex justify-center items-center min-h-screen">Tempus Initialized</h1>
+    <x-view-event title="ila">
+    </x-view-event>
+
+    <button x-data x-on:click="$dispatch('open-view-modal')" class="mt-40 text-white bg-teal-500 p-9">testModal</button>
 </body>
 </html>
